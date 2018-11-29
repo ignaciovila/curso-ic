@@ -1,2 +1,2 @@
 #!/bin/bash
-./gradlew -DapiName=curso-ci buildImage
+./gradlew -DapiName=curso-ic buildImage
