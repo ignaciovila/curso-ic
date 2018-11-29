@@ -12,8 +12,9 @@ pipeline {
          }
          post{
             always{
-
                 println "aca se exportan los resultados de los test unitarios"
+
+                junit "/build/test-results/verify/*.xml"
             }
          }
 
@@ -28,13 +29,14 @@ pipeline {
         stage('Verify') {
            steps {
                println 'aca va el verify'
-               
+
                sh "./verify.sh"
            }
            post{
                always{
-
                    println "aca se exportan los resultados de los test de aceptación"
+
+                   junit "/build/test-results/verify/*.xml"
                }
            }
         }
