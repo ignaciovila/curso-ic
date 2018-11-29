@@ -1,2 +1,2 @@
 #!/bin/bash
-./gradlew clean verify
+./gradlew clean verify --stacktrace
