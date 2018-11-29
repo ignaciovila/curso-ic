@@ -8,6 +8,7 @@ pipeline {
          steps {
              println 'aca va el build'
 
+             sh "./build.sh"
          }
          post{
             always{
